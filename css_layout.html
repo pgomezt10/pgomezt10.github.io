@@ -21,10 +21,20 @@
          border:2px dashed rgb(229, 255, 0);
          margin:auto;
      }
+     .float{
+        width: 200px;
+        float: left;
+        margin-right: 6px;
+     }
+     .clear{
+        background-color: rgb(0, 255, 242);
+        padding: 6px;
+        clear: both;
+     }
  </style>
  </head>
  <body>
-     <h1>Css layout Pablo Tello [Actualizado 24 nov]</h1>
+     <h1>Css layout Pablo Tello [Actualizado 3dic]</h1>
      
      <h2>Span</h2>
      <p>Sirve para aplicar estilo al texto o agrupar elementos en línea.</p>
@@ -58,5 +68,19 @@
             margin:automatico. La propiedad CSS margin establece el margen para los cuatro lados.
         </p>
     </div>
+
+    <h2>Posición</h2>
+    <p>La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.</p>
+    <p>Como queda muy feo poner esas propiedades en esta pagina he hecho otra aparte.</p>
+    <a href="pagina_fea.html">Enlace a página fea</a>
+
+    <h2>Float y clear</h2>
+    <p>La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del  posicionamiento absoluto). <img src="imagenes/sandia.jpg" class="float">
+    <br>
+    <br>Esta imagen de una sandía tiene un float left y una margin-right de 6px
+    </p>
+    <p class=clear>La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes. Este texto lleva clear:both</p>
+
+
 </body>
 </html>
