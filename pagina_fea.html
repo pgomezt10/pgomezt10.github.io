@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Página Pablo Tello</title>
+ <style>
+    .fixed{
+        position:fixed;
+        z-index:1;
+    }
+    .relative{
+        position:relative;
+        top:20px;
+    }
+    .absolute{
+        position:absolute;
+        top:700px;
+        left:200px;
+    }
+    
+ </style>
+ </head>
+ <body>
+    <h1 class=fixed>Página para position</h1>
+    <h2>Etiqueta fixed</h2>
+    <p>La etiqueta fixed toma una posición en la pantalla y se queda ahi aunque bajemos en la página. El encabezado de esta pagina tiene la etiqueta fixed</p>
+
+    <h2>Etiqueta relative</h2>
+    <p>La etiqueta relative toma una posición relativa a lo anterior escrito. Esto pasa por defecto en todo lo que escribismos pero con esta etiqueta podemos elegir el valor. La siguiente imagen tiene una separación de 20px</p>
+    <img src="imagenes/empire_state.jpg" width="200" class="relative">
+
+    <h2>Z-index</h2>
+    <p>La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor.El encabezado de esta pagina tiene un z-index de 1</p>
+
+    <h2>Etiqueta absolute</h2>
+    <p>Un elemento posicionado absolutamente es un elemento cuyo valor computado de  position es absolute o fixed. Las propiedades top, right, bottom, y  left especifican el desplazamiento desde los bordes del bloque contenedor del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado). Si el elemento tiene márgenes, se agregarán al desplazamiento. el elemento establece un nuevo contexto de formato de bloque para su contenido.</p>
+    <img src="imagenes/estatua_libertad.jpg" width="500" class="absolute">
+    <p>La foto de la estatua de la libertad tiene la etiqueta absolute con los valores top:700px y left:200px</p>
+
+</body>
+</html>
